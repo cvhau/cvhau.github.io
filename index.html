@@ -8,7 +8,24 @@
             alert("gPlusOneCallBack called");
         }
     </script>
+    
     <script>(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src="//x.instagramfollowbutton.com/follow.js";s.parentNode.insertBefore(g,s);}(document,"script"));</script>
+    
+    <script src="https://apis.google.com/js/platform.js"></script>
+
+    <script>
+      function onYtEvent(payload) {
+        if (payload.eventType == 'subscribe') {
+          // Add code to handle subscribe event.
+        } else if (payload.eventType == 'unsubscribe') {
+          // Add code to handle unsubscribe event.
+        }
+        if (window.console) { // for debugging only
+          window.console.log('YT event: ', payload);
+        }
+      }
+    </script>
+    
 </head>
 <body>
     <!-- Place this tag in your head or just before your close body tag. -->
@@ -24,6 +41,10 @@
     <br /> <br />
     <center>
         <span class="ig-follow" data-id="5479dee" data-handle="igfbdotcom" data-count="false" data-size="small" data-username="true"></span>
+    </center>
+    <br /> <br />
+    <center>
+        <div class="g-ytsubscribe" data-channel="GoogleDevelopers" data-layout="default" data-count="default" data-onytevent="onYtEvent"></div>
     </center>
 </body>
 
