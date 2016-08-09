@@ -3,12 +3,21 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Cao Van Hau Profile</title>
+    <script>
+        function gPlusOneCallBack() {
+            alert("gPlusOneCallBack called");
+        }
+    </script>
 </head>
 <body>
-    <script type="text/javascript" src="//cvhau.github.io/apps.js"></script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <!--<script type="text/javascript" src="//cvhau.github.io/apps.js"></script> -->
     
     <h3 style="margin: 100px auto; text-align: center">Hello world!</h3>
-
+    <!-- Place this tag where you want the +1 button to render. -->
+    <div class="g-plusone" data-size="small" data-annotation="none" data-callback="gPlusOneCallBack" data-href="http://www.hoangweb.com/codeigniter/luu-du-lieu-codeigniter-voi-active-record"></div>
 </body>
 
 </html>
